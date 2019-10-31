@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>CP 2019 40823245</title><link href="https://40823245.github.io/cp2019/blog/" rel="alternate"></link><link href="https://40823245.github.io/cp2019/blog/feeds/all.atom.xml" rel="self"></link><id>https://40823245.github.io/cp2019/blog/</id><updated>2018-09-10T11:00:00+08:00</updated><entry><title>2018 Fall CP 課程</title><link href="https://40823245.github.io/cp2019/blog/2018-Fall-32-bit-Windows.html" rel="alternate"></link><published>2018-09-10T11:00:00+08:00</published><updated>2018-09-10T11:00:00+08:00</updated><author><name>yen</name></author><id>tag:40823245.github.io,2018-09-10:/cp2019/blog/2018-Fall-32-bit-Windows.html</id><summary type="html">&lt;p&gt;2018 Fall 一開始, 在一台已經 10 年的 32 位元的 Windows 7 操作系統中工作. 可攜的 Python 3.7.0 仍然可以配置, Leo Editor、PyQt5、flask、Markdown、pelican 與 bs4 的安裝, 也都沒有問題. 只有 Eric6 因為缺少必要模組與 Python 3.7.0 對應的 pyqt5-tools, 因此沒有安裝.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>CP 2019 40823245</title><link href="https://40823245.github.io/cp2019/blog/" rel="alternate"></link><link href="https://40823245.github.io/cp2019/blog/feeds/all.atom.xml" rel="self"></link><id>https://40823245.github.io/cp2019/blog/</id><updated>2019-10-31T18:00:00+08:00</updated><entry><title>2019 Fall CP 課程</title><link href="https://40823245.github.io/cp2019/blog/2019-Fall-32-bit-Windows.html" rel="alternate"></link><published>2019-10-31T18:00:00+08:00</published><updated>2019-10-31T18:00:00+08:00</updated><author><name>wei</name></author><id>tag:40823245.github.io,2019-10-31:/cp2019/blog/2019-Fall-32-bit-Windows.html</id><summary type="html">&lt;p&gt;2018 Fall 一開始, 在一台已經 10 年的 32 位元的 Windows 7 操作系統中工作. 可攜的 Python 3.7.0 仍然可以配置, Leo Editor、PyQt5、flask、Markdown、pelican 與 bs4 的安裝, 也都沒有問題. 只有 Eric6 因為缺少必要模組與 Python 3.7.0 對應的 pyqt5-tools, 因此沒有安裝.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2018 Fall 一開始, 在一台已經 10 年的 32 位元的 Windows 7 操作系統中工作. 可攜的 Python 3.7.0 仍然可以配置, Leo Editor、PyQt5、flask、Markdown、pelican 與 bs4 的安裝, 也都沒有問題. 只有 Eric6 因為缺少必要模組與 Python 3.7.0 對應的 pyqt5-tools, 因此沒有安裝.&lt;/p&gt;
 
 
@@ -16,4 +16,41 @@
 &lt;p&gt;將近二十年過去, &lt;a href="https://webcache.googleusercontent.com/search?q=cache:sqYPNC8_mgoJ:https://www.most.gov.tw/sci/ch/detail%3Farticle_uid%3D4ee546e6-73fa-43a8-b1df-a5a0a1fe1824%26menu_id%3D0bac23e6-b3df-4fe0-b152-2e1050eb2f2c%26content_type%3DP%26view_mode%3DlistView+&amp;amp;cd=6&amp;amp;hl=zh-TW&amp;amp;ct=clnk&amp;amp;gl=tw"&gt;網際機械設計資源中心&lt;/a&gt;始終仍只有片段系統, 其中包含 &lt;a href="https://github.com/chiamingyen/cmsimfly"&gt;CMSimfly&lt;/a&gt;、&lt;a href="https://github.com/chiamingyen/pygrouf"&gt;Pygrouf&lt;/a&gt; 與 &lt;a href="https://github.com/KmolYuan/Pyslvs-PyQt5"&gt;Pyslvs&lt;/a&gt; (&lt;a href="http://www.pyslvs.com/content/"&gt;Pyslvs 手冊&lt;/a&gt;)等相關專案.&lt;/p&gt;
 &lt;p&gt;就如同&lt;a href="http://blog.ez2learn.com/2009/06/27/how-to-write-useful-program/"&gt;如何寫出有用的程式?&lt;/a&gt; 一文中所述, "沒有興趣不要來念資工" 是一句非常貼切的警語, 當學生對於程式設計提不起興趣, 沒有將所學的各式語法、資料結構與演算法, 套用在自己非常有興趣的領域中, 用來解決各式問題的話, 日復一日, 我們還是寫不出任何有用的程式!&lt;/p&gt;
 &lt;h2&gt;早該起頭的重要工作&lt;/h2&gt;
-&lt;p&gt;&lt;a href="https://www.quora.com/Why-is-programming-so-important-in-the-modern-world"&gt;計算機程式的重要性&lt;/a&gt;其實已經無需爭辯, 人類未來的許多工作都是透過網路與數位運算達成, 既知趨勢如此, 每一位工程師就該越早起頭原本就該進行的重要工作, 透過計算機程式來解決問題, 構築一個值得長期投注心力的程式專案.&lt;/p&gt;</content><category term="2018FallCP"></category></entry></feed>
+&lt;p&gt;&lt;a href="https://www.quora.com/Why-is-programming-so-important-in-the-modern-world"&gt;計算機程式的重要性&lt;/a&gt;其實已經無需爭辯, 人類未來的許多工作都是透過網路與數位運算達成, 既知趨勢如此, 每一位工程師就該越早起頭原本就該進行的重要工作, 透過計算機程式來解決問題, 構築一個值得長期投注心力的程式專案.&lt;/p&gt;</content><category term="2019FallCP"></category></entry><entry><title>嵌入 Dartpad</title><link href="https://40823245.github.io/cp2019/blog/embedded-dartpad-to-blog.html" rel="alternate"></link><published>2019-10-31T18:00:00+08:00</published><updated>2019-10-31T18:00:00+08:00</updated><author><name>wei</name></author><id>tag:40823245.github.io,2019-10-31:/cp2019/blog/embedded-dartpad-to-blog.html</id><summary type="html">&lt;p&gt;在此利用https://dartpad.github.io 將位於 downloads 目錄中的 dart 程式導入&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;在此利用https://dartpad.github.io 將位於 downloads 目錄中的 dart 程式導入&lt;/p&gt;
+
+
+&lt;script&gt;
+function getDart(dirname){
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=mdecourse&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/" + dirname + "&amp;theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+
+function getHtmlDart(dirname){
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=mdecourse&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/" + dirname + "&amp;theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function getFlutter(dirname){
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=mdecourse&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/" + dirname + "&amp;theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function largest(){
+document.getElementById("iframe").width = document.body.clientWidth ;
+document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
+}
+
+function original(){
+document.getElementById("iframe").width = 800 ;
+document.getElementById("iframe").height = 600 ;
+}
+&lt;/script&gt;
+
+&lt;!-- 取 Dart 程式的按鈕 --&gt;
+
+&lt;p&gt;&lt;button onclick="largest()"&gt;放大&lt;/button&gt; &lt;button onclick="original()"&gt;回復&lt;/button&gt; &lt;button onclick="getDart('hello')"&gt;Hello&lt;/button&gt; &lt;button onclick="getDart('for')"&gt;For Loop&lt;/button&gt; &lt;button onclick="getDart('sum')"&gt;Sum&lt;/button&gt; &lt;button onclick="getDart('runge_kutta')"&gt;Runge-Kutta&lt;/button&gt; &lt;button onclick="getDart('mass_spring_damping')"&gt;Mass Spring Damping&lt;/button&gt; &lt;button onclick="getHtmlDart('roc_flag')"&gt;ROC Flag&lt;/button&gt; &lt;button onclick="getHtmlDart('grid')"&gt;Grid&lt;/button&gt; &lt;button onclick="getHtmlDart('slithery')"&gt;Slithery&lt;/button&gt; &lt;button onclick="getFlutter('flutter1')"&gt;Flutter1&lt;/button&gt; &lt;button onclick="getFlutter('flutter2')"&gt;Flutter2&lt;/button&gt; &lt;button onclick="getFlutter('flutter3')"&gt;Flutter3&lt;/button&gt;&lt;/p&gt;
+
+&lt;!-- 內建放入的 Dart 原始碼 --&gt;
+
+&lt;p&gt;&lt;iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=mdecourse&amp;amp;gh_repo=cp2019&amp;amp;gh_path=downloads/dart_ex/mass_spring_damping&amp;amp;theme=dark" width="800"&gt;&lt;/iframe&gt;&lt;/p&gt;</content><category term="2019FallCP"></category></entry></feed>
