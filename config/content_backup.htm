@@ -4,37 +4,8 @@
 <p><a href="/downloads/宿網系統申請教學.pdf">test.pdf</a></p>
 <p><a href="https://dartpad.dev?id=39638fa01182fbb510b71c3b0ee8209a">https://dartpad.dev?id=39638fa01182fbb510b71c3b0ee8209a</a> </p>
 <p><a href="https://gist.github.com/40823245/39638fa01182fbb510b71c3b0ee8209a">https://gist.github.com/40823245/39638fa01182fbb510b71c3b0ee8209a</a> </p>
-<script>
-function getDart(dirname){
-    source = "https://dartpad.github.io/embed-dart.html?gh_owner=mdecourse&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
-    document.getElementById("iframe").src = source ;
-}
-
-function getHtmlDart(dirname){
-    source = "https://dartpad.github.io/embed-html.html?gh_owner=mdecourse&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
-document.getElementById("iframe").src = source ;
-}
-
-function getFlutter(dirname){
-    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=mdecourse&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
-document.getElementById("iframe").src = source ;
-}
-
-function largest(){
-document.getElementById("iframe").width = document.body.clientWidth ;
-document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
-}
-
-function original(){
-document.getElementById("iframe").width = 800 ;
-document.getElementById("iframe").height = 600 ;
-}
-</script>
-<!-- 取 Dart 程式的按鈕 -->
-<p><button onclick="largest()">放大</button> <button onclick="original()">回復</button> <button onclick="getDart('hello')">Hello</button> <button onclick="getDart('for')">For Loop</button> <button onclick="getDart('sum')">Sum</button> <button onclick="getDart('runge_kutta')">Runge-Kutta</button> <button onclick="getDart('mass_spring_damping')">Mass Spring Damping</button> <button onclick="getHtmlDart('roc_flag')">ROC Flag</button> <button onclick="getHtmlDart('grid')">Grid</button> <button onclick="getHtmlDart('slithery')">Slithery</button> <button onclick="getFlutter('flutter1')">Flutter1</button> <button onclick="getFlutter('flutter2')">Flutter2</button> <button onclick="getFlutter('flutter3')">Flutter3</button></p>
-<!-- 內建放入的 Dart 原始碼 -->
-<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=mdecourse&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/mass_spring_damping&amp;theme=dark" width="800"></iframe></p>
-<p><img alt="" height="378" src="/images/74636051_p0.png" width="500"/></p><h1>works</h1>
+<p><img alt="" height="378" src="/images/74636051_p0.png" width="500"/></p>
+<h1>works</h1>
 <h2>W4</h2>
 <p>原始碼:</p>
 <pre class="brush:dart;auto-links:false;toolbar:false" contenteditable="false">void main() {
@@ -67,3 +38,8 @@ main(){
 <p><img alt="" height="291" src="/images/擷取3.PNG" width="482"/></p>
 <p>阻尼係數=0</p>
 <p><img alt="" height="290" src="/images/擷取4.PNG" width="484"/></p>
+<h2>W8</h2>
+<!-- 取 Dart 程式的按鈕 -->
+<p><button onclick="largest()">放大</button> <button onclick="original()">回復</button> <button onclick="getDart('hello')">Hello</button> <button onclick="getDart('for')">For Loop</button> <button onclick="getDart('sum')">Sum</button> <button onclick="getDart('runge_kutta')">Runge-Kutta</button> <button onclick="getDart('mass_spring_damping')">Mass Spring Damping</button> <button onclick="getHtmlDart('roc_flag')">ROC Flag</button> <button onclick="getHtmlDart('grid')">Grid</button> <button onclick="getHtmlDart('slithery')">Slithery</button> <button onclick="getFlutter('flutter1')">Flutter1</button> <button onclick="getFlutter('flutter2')">Flutter2</button> <button onclick="getFlutter('flutter3')">Flutter3</button></p>
+<!-- 內建放入的 Dart 原始碼 -->
+<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=mdecourse&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/mass_spring_damping&amp;theme=dark" width="800"></iframe></p>
