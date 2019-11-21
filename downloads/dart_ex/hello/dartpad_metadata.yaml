@@ -1,4 +1,6 @@
 name: hello
-mode: dart
+mode: html
 files:
   - name: main.dart
+  - name: index.html
+  - name: style.css
