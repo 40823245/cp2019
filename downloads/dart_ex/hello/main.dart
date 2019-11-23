@@ -1,3 +1,3 @@
-void main() {
-  print("哈囉!");
+main(){
+    print("hello");
 }

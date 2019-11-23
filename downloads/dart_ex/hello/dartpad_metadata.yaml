@@ -1,4 +1,4 @@
-name:  Dart HTML test with just main
+name: Dart HTML test with just main
 mode: html
 files:
   - name: main.dart
