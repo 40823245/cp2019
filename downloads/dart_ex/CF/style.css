@@ -1,0 +1,18 @@
+/*
+html
+  
+  <input id="task" type="text" placeholder=
+  "What do you want to do?"/>
+  <ul id="list"/>
+  
+css
+
+body {
+  color: white;
+  font-size: 50px;
+}
+
+input, select, textarea {
+font-size: 100%;
+}
+*/
