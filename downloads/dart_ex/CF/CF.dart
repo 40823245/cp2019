@@ -17,7 +17,7 @@ void main() {
   print("The °F increases as:\n");
   for (int temperatures = 0; temperatures <= 10; temperatures++) {
     n =(temperatures*1.8+32).round().toInt();
-    print("After $temperatures temperatures:\t $n temperatures");
+    print("Count $temperatures temperatures:\t $n temperatures");
   }
 }
 */
@@ -31,7 +31,7 @@ const int NO_temperatures = 10;
 void main() {
   print("The °F increases as:\n");
   for (int temperatures = 0) {
-    rabbitCount = calculateRabbits(temperatures);
+    temperaturesCount = calculatetemperatures(temperatures);
     print("Count $temperatures temperatures:\t $temperaturesCount temperatures");
   }
 }
@@ -52,7 +52,7 @@ void main() {
 
 calctemperatures() {
   // binding variables to html elements:
-  InputElement temperaturesInput = querySelector("#years");
+  InputElement temperaturesInput = querySelector("#temperatures");
   LabelElement output = querySelector("#output");
   // getting input
   String temperaturesString = temperaturesInput.value;
