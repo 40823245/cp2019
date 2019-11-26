@@ -66,3 +66,61 @@ int calculatetemperatures(int temperatures) {
       .round()
       .toInt();
 }
+
+/*
+html
+
+°C <input type="number" id="temperatures" value="0" min="0" max="100"> 
+temperatures
+<input type="button" id="submit" value="Calculate"/>
+<br/>°F: <label id="output"></label>
+
+css
+
+body {
+  color: white;
+  font-size: 50px;
+}
+
+input, select, textarea {
+font-size: 100%;
+}
+*/
+/*
+import 'dart:html';
+
+InputElement task;
+UListElement list;
+
+main() {
+  task = querySelector('#task');
+  list = querySelector('#list');
+  task.onChange.listen((e) => addItem());
+}
+
+void addItem() {
+  var newTask = LIElement();
+  newTask.text = task.value;
+  task.value = '';
+  list.children.add(newTask);
+}
+*/
+
+/*
+html
+  
+  <input id="task" type="text" placeholder=
+  "What do you want to do?"/>
+  <ul id="list"/>
+  
+css
+
+body {
+  color: white;
+  font-size: 50px;
+}
+
+input, select, textarea {
+font-size: 100%;
+}
+*/
