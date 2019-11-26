@@ -70,8 +70,8 @@ int calculatetemperatures(int temperatures) {
 /*
 html
 
-°C <input type="number" id="temperatures" value="0" min="0" max="100"> 
-temperatures
+temperatures<input type="number" id="temperatures" value="0" min="0" max="100"> 
+°C
 <input type="button" id="submit" value="Calculate"/>
 <br/>°F: <label id="output"></label>
 
