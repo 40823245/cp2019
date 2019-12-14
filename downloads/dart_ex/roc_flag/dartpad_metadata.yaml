@@ -1,4 +1,4 @@
-  # 說明此 yaml 檔案所引用程式的目的
+# 說明此 yaml 檔案所引用程式的目的
 name: ROC flag in HTML Canvas
 # 引用模式為純 dart 或 html 模式
 mode: html
