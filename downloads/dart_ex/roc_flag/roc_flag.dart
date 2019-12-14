@@ -19,11 +19,21 @@ void main() {
 }
 
 void drawUSA(ctx){
-  // 請畫出美國國旗
+  //紅底
   ctx.clearRect(0, 0, flag_w, flag_h);
-  ctx.font = "30px Arial";
-  ctx.strokeStyle = 'rgb(255, 0, 0)';
-  ctx.strokeText("請畫出美國國旗", flag_w/6, flag_w/4);
+  ctx.fillStyle = 'rgb(255, 0, 0)';
+  ctx.fillRect(0, 0, flag_w, flag_h);
+  //白線
+  ctx.fillStyle = 'rgb(255, 255, 255)';
+  ctx.fillRect(0, 15.3, flag_w, flag_h/13);
+  ctx.fillRect(0, 45.9, flag_w, flag_h/13);
+  ctx.fillRect(0, 75.5, flag_w, flag_h/13);
+  ctx.fillRect(0, 106.1, flag_w, flag_h/13);
+  ctx.fillRect(0, 136.7, flag_w, flag_h/13);
+  ctx.fillRect(0, 167.3, flag_w, flag_h/13);
+  //籃底
+  ctx.fillStyle = 'rgb(0, 0, 140)';
+  ctx.fillRect(0, 0, 150,106.1 );
 }
 
 void drawROC(ctx){
