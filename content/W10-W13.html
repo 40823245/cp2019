@@ -67,7 +67,7 @@
 <link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
 <script type="text/javascript">SyntaxHighlighter.all();</script>
 
-<!-- for LaTeX equations 暫時不用
+<!-- 啟用 LaTeX equations 編輯 -->
 <script src="https://scrum-3.github.io/web/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
 <script type="text/javascript">
 init_mathjax = function() {
@@ -88,7 +88,6 @@ init_mathjax = function() {
 }
 init_mathjax();
 </script>
--->
 <!-- 暫時不用
 <script src="./../cmsimde/static/fengari-web.js"></script>
 <script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
@@ -190,6 +189,9 @@ document.getElementById("iframe").height = 600 ;
 <p></p>
 <p></p>
 <p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823245&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/mass_spring_damping&amp;theme=dark" width="800"></iframe></p>
+<p>溫度轉換</p>
+<p>temperatures <input id="temperatures" max="100" min="0" type="number" value="0"/> °C <input id="submit" type="button" value="Calculate"/> <br/>°F: <label id="output"></label></p>
+<script src="./../downloads/dart_ex/CF/CF.js"></script>
 <br />W8 << <a href='W8.html'>Previous</a> <a href='JavaScript.html'>Next</a> >> JavaScript</div>
         
     <!-- footer -->
