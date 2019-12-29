@@ -142,7 +142,11 @@ document.getElementById("iframe").height = 600 ;
 <p>x抓cx值，y抓cy值，step計算方式=pi除以幾角</p>
 <p><img alt="" height="256" src="/images/輸出.PNG" width="311"/></p>
 <p>預設''fff''為白色</p>
-<p>外半徑計算和內半徑計算，再做輸出</p>
+<p>moveTo移動到(x座標，y座標-外半徑)</p>
+<p>x=cx+cos(rot)*外半徑</p>
+<p><span>y=cy+sin(rot)*外半徑</span></p>
+<p><span>lineTo畫線到(x座標，y座標)</span></p>
+<p><span>rot=rot+step</span></p>
 <p><img alt="" height="130" src="/images/顏色.PNG" width="252"/></p>
 <p>顏色設定</p>
 <p> ctx.strokeStyle='white' 邊界為白色</p>
