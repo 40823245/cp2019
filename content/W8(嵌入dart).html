@@ -138,7 +138,7 @@ init_mathjax();
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='About.html'>About</a><li class='has-children'><a href='works.html'>works</a><ul class='dropdown'><li><a href='W4.html'>W4</a><li><a href='W5.html'>W5</a><li><a href='W6.html'>W6</a><li><a href='W7.html'>W7</a><li><a href='W8.html'>W8</a><li><a href='W10-W13.html'>W10-W13</a><li><a href='JavaScript.html'>JavaScript</a></li></ul><li><a href='W16 查驗考試.html'>W16 查驗考試</a><li><a href='星星講解.html'>星星講解</a><li><a href='筆記.html'>筆記</a></li>
+                     <li><a href='About.html'>About</a><li class='has-children'><a href='works.html'>works</a><ul class='dropdown'><li><a href='W4(hello程式).html'>W4(hello程式)</a><li><a href='W5(上傳圖片).html'>W5(上傳圖片)</a><li><a href='W6(For loop程式).html'>W6(For loop程式)</a><li><a href='W7(阻尼).html'>W7(阻尼)</a><li><a href='W8(嵌入dart).html'>W8(嵌入dart)</a><li><a href='W10-W15(小組任務).html'>W10-W15(小組任務)</a><li><a href='JavaScript.html'>JavaScript</a></li></ul><li><a href='W16 查驗考試.html'>W16 查驗考試</a><li><a href='星星講解.html'>星星講解</a><li><a href='筆記.html'>筆記</a></li>
                       </ul>
                 </nav>
               </div>
@@ -149,23 +149,40 @@ init_mathjax();
           </div>
           
         </header>
-    <div id="tipue_search_content">W5 << <a href='W5.html'>Previous</a> <a href='W7.html'>Next</a> >> W7<br /><h1>W6</h1>
-<p>原始碼:</p>
-<pre class="brush:dart;auto-links:false;toolbar:false" contenteditable="false">int i;
-int sum;
- 
-main(){
-  sum = 0;
-  for(i=1;i &lt;=10 ;i++){
-    sum += i;
-    print("$sum");
-  }
-  print("sum = $sum");
-}</pre>
-<p><br/><br/></p>
-<p>For loop程式</p>
-<p><iframe height="600" src="https://dartpad.dev/embed-inline.html?id=9912d8b84e929aa7ced58d40e80e3449" width="800"><iframe></iframe></iframe></p>
-<br />W5 << <a href='W5.html'>Previous</a> <a href='W7.html'>Next</a> >> W7</div>
+    <div id="tipue_search_content">W7(阻尼) << <a href='W7(阻尼).html'>Previous</a> <a href='W10-W15(小組任務).html'>Next</a> >> W10-W15(小組任務)<br /><h1>W8(嵌入dart)</h1>
+<p></p>
+<script>
+function getDart(dirname){
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823245&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+
+function getHtmlDart(dirname){
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=40823245&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function getFlutter(dirname){
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=40823245&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function largest(){
+document.getElementById("iframe").width = document.body.clientWidth ;
+document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
+}
+
+function original(){
+document.getElementById("iframe").width = 800 ;
+document.getElementById("iframe").height = 600 ;
+}
+</script>
+<!-- 取 Dart 程式的按鈕 -->
+<p><button onclick="largest()">放大</button> <button onclick="original()">回復</button> <button onclick="getDart('hello')">Hello</button> <button onclick="getDart('for')">For Loop</button> <button onclick="getDart('sum')">Sum</button> <button onclick="getDart('runge_kutta')">Runge-Kutta</button> <button onclick="getDart('mass_spring_damping')">Mass Spring Damping</button> <button onclick="getHtmlDart('roc_flag')">ROC Flag</button> <button onclick="getHtmlDart('grid')">Grid</button> <button onclick="getHtmlDart('slithery')">Slithery</button> <button onclick="getFlutter('flutter1')">Flutter1</button> <button onclick="getFlutter('flutter2')">Flutter2</button> <button onclick="getFlutter('flutter3')">Flutter3</button></p>
+<!-- 內建放入的 Dart 原始碼 -->
+<p></p>
+<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823245&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/mass_spring_damping&amp;theme=dark" width="800"></iframe></p>
+<br />W7(阻尼) << <a href='W7(阻尼).html'>Previous</a> <a href='W10-W15(小組任務).html'>Next</a> >> W10-W15(小組任務)</div>
         
     <!-- footer -->
       <div class="container">
