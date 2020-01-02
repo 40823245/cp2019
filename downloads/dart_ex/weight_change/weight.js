@@ -300,10 +300,8 @@
       return hash;
     },
     Primitives_parseInt: function(source, radix) {
-      var match, decimalMatch;
-      if (typeof source !== "string")
-        H.throwExpression(H.argumentErrorValue(source));
-      match = /^\s*[+-]?((0x[a-f0-9]+)|(\d+)|([a-z0-9]+))\s*$/i.exec(source);
+      var decimalMatch,
+        match = /^\s*[+-]?((0x[a-f0-9]+)|(\d+)|([a-z0-9]+))\s*$/i.exec(source);
       if (match == null)
         return;
       if (3 >= match.length)
@@ -319,14 +317,14 @@
       return H.Primitives__objectClassName(object) + H._joinArguments(H.getRuntimeTypeInfo(object), 0, null);
     },
     Primitives__objectClassName: function(object) {
-      var interceptorConstructorName, $name, t1, dispatchName, objectConstructor, match, decompiledName, endIndex, _null = null,
+      var interceptorConstructorName, $name, t1, dispatchName, objectConstructor, match, decompiledName,
         interceptor = J.getInterceptor$(object),
         interceptorConstructor = interceptor.constructor;
       if (typeof interceptorConstructor == "function") {
         interceptorConstructorName = interceptorConstructor.name;
-        $name = typeof interceptorConstructorName === "string" ? interceptorConstructorName : _null;
+        $name = typeof interceptorConstructorName === "string" ? interceptorConstructorName : null;
       } else
-        $name = _null;
+        $name = null;
       t1 = $name == null;
       if (t1 || interceptor === C.Interceptor_methods || !!interceptor.$isUnknownJavaScriptObject) {
         dispatchName = C.C_JS_CONST(object);
@@ -336,7 +334,7 @@
           objectConstructor = object.constructor;
           if (typeof objectConstructor == "function") {
             match = String(objectConstructor).match(/^\s*function\s*([\w$]*)\s*\(/);
-            decompiledName = match == null ? _null : match[1];
+            decompiledName = match == null ? null : match[1];
             if (typeof decompiledName === "string" && /^\w+$/.test(decompiledName))
               $name = decompiledName;
           }
@@ -344,15 +342,7 @@
         return $name;
       }
       $name = $name;
-      endIndex = $name.length;
-      if (endIndex > 1 && C.JSString_methods._codeUnitAt$1($name, 0) === 36) {
-        if (1 > endIndex)
-          H.throwExpression(P.RangeError$value(1, _null));
-        if (endIndex > endIndex)
-          H.throwExpression(P.RangeError$value(endIndex, _null));
-        $name = $name.substring(1, endIndex);
-      }
-      return H.unminifyOrTag($name);
+      return H.unminifyOrTag($name.length > 1 && C.JSString_methods._codeUnitAt$1($name, 0) === 36 ? C.JSString_methods.substring$1($name, 1) : $name);
     },
     iae: function(argument) {
       throw H.wrapException(H.argumentErrorValue(argument));
@@ -1697,6 +1687,9 @@
     remove$0$x: function(receiver) {
       return J.getInterceptor$x(receiver).remove$0(receiver);
     },
+    substring$2$s: function(receiver, a0, a1) {
+      return J.getInterceptor$s(receiver).substring$2(receiver, a0, a1);
+    },
     toLowerCase$0$s: function(receiver) {
       return J.getInterceptor$s(receiver).toLowerCase$0(receiver);
     },
@@ -2387,6 +2380,9 @@
     RangeError$value: function(value, $name) {
       return new P.RangeError(null, null, true, value, $name, "Value not in range");
     },
+    RangeError$range: function(invalidValue, minValue, maxValue, $name, message) {
+      return new P.RangeError(minValue, maxValue, true, invalidValue, $name, "Invalid value");
+    },
     IndexError$: function(invalidValue, indexable, $name, message, $length) {
       var t1 = H.intTypeCheck($length == null ? J.get$length$asx(indexable) : $length);
       return new P.IndexError(t1, true, invalidValue, $name, "Index out of range");
@@ -2727,11 +2723,15 @@
   },
   L = {
     main: function() {
-      var t1 = J.get$onClick$x(document.querySelector("#submit")),
-        t2 = H.getTypeArgumentByIndex(t1, 0);
-      W._EventStreamSubscription$(t1._target, t1._eventType, H.functionTypeCheck(new L.main_closure(), {func: 1, ret: -1, args: [t2]}), false, t2);
+      var t2,
+        t1 = document,
+        weightInput = H.interceptedTypeCheck(t1.querySelector("#weight"), "$isInputElement");
+      t1 = J.get$onClick$x(t1.querySelector("#submit"));
+      t2 = H.getTypeArgumentByIndex(t1, 0);
+      W._EventStreamSubscription$(t1._target, t1._eventType, H.functionTypeCheck(new L.main_closure(weightInput), {func: 1, ret: -1, args: [t2]}), false, t2);
     },
-    main_closure: function main_closure() {
+    main_closure: function main_closure(t0) {
+      this.weightInput = t0;
     }
   };
   var holders = [C, H, J, P, W, L];
@@ -2863,23 +2863,18 @@
     $isIterator: 1
   };
   J.JSNumber.prototype = {
-    toInt$0: function(receiver) {
-      var t1;
-      if (receiver >= -2147483648 && receiver <= 2147483647)
-        return receiver | 0;
-      if (isFinite(receiver)) {
-        t1 = receiver < 0 ? Math.ceil(receiver) : Math.floor(receiver);
-        return t1 + 0;
-      }
-      throw H.wrapException(P.UnsupportedError$("" + receiver + ".toInt()"));
-    },
-    round$0: function(receiver) {
-      if (receiver > 0) {
-        if (receiver !== 1 / 0)
-          return Math.round(receiver);
-      } else if (receiver > -1 / 0)
-        return 0 - Math.round(0 - receiver);
-      throw H.wrapException(P.UnsupportedError$("" + receiver + ".round()"));
+    toStringAsFixed$1: function(receiver, fractionDigits) {
+      var result, t1;
+      if (fractionDigits > 20)
+        throw H.wrapException(P.RangeError$range(fractionDigits, 0, 20, "fractionDigits", null));
+      result = receiver.toFixed(fractionDigits);
+      if (receiver === 0)
+        t1 = 1 / receiver < 0;
+      else
+        t1 = false;
+      if (t1)
+        return "-" + result;
+      return result;
     },
     toString$0: function(receiver) {
       if (receiver === 0 && 1 / receiver < 0)
@@ -2931,6 +2926,18 @@
       if (otherLength > receiver.length)
         return false;
       return pattern === receiver.substring(0, otherLength);
+    },
+    substring$2: function(receiver, startIndex, endIndex) {
+      if (endIndex == null)
+        endIndex = receiver.length;
+      if (startIndex > endIndex)
+        throw H.wrapException(P.RangeError$value(startIndex, null));
+      if (endIndex > receiver.length)
+        throw H.wrapException(P.RangeError$value(endIndex, null));
+      return receiver.substring(startIndex, endIndex);
+    },
+    substring$1: function($receiver, startIndex) {
+      return this.substring$2($receiver, startIndex, null);
     },
     toLowerCase$0: function(receiver) {
       return receiver.toLowerCase();
@@ -4085,7 +4092,7 @@
   P.FormatException.prototype = {
     toString$0: function(_) {
       var t1 = this.message,
-        report = t1 != null && "" !== t1 ? "FormatException: " + H.S(t1) : "FormatException";
+        report = "" !== t1 ? "FormatException: " + t1 : "FormatException";
       return report;
     }
   };
@@ -4843,15 +4850,32 @@
   };
   L.main_closure.prototype = {
     call$1: function(e) {
-      var t1, weightInput, output, weight;
+      var t1, output, len, t2, type, number;
       H.interceptedTypeCheck(e, "$isMouseEvent");
-      t1 = document;
-      weightInput = H.interceptedTypeCheck(t1.querySelector("#weight"), "$isInputElement");
-      output = H.interceptedTypeCheck(t1.querySelector("#output"), "$isLabelElement");
-      weight = P.int_parse(weightInput.value);
-      if (typeof weight !== "number")
-        return weight.$mul();
-      (output && C.LabelElement_methods).setInnerHtml$1(output, "" + C.JSInt_methods.toInt$0(C.JSNumber_methods.round$0(weight * 2.2)));
+      t1 = this.weightInput.value;
+      output = H.interceptedTypeCheck(document.querySelector("#output"), "$isLabelElement");
+      len = t1.length;
+      t2 = len - 2;
+      if (t2 < 0)
+        return H.ioore(t1, t2);
+      type = t1[t2];
+      number = P.int_parse(J.substring$2$s(t1, 0, t2));
+      if (type === "L" || type === "l") {
+        t1 = " " + H.S(number) + " LB =  ";
+        if (typeof number !== "number")
+          return number.$mul();
+        (output && C.LabelElement_methods).setInnerHtml$1(output, t1 + C.JSNumber_methods.toStringAsFixed$1(number * 0.4536, 4) + " KG");
+      } else {
+        t1 = type === "K" || type === "k";
+        t2 = output && C.LabelElement_methods;
+        if (t1) {
+          t1 = " " + H.S(number) + " KG =  ";
+          if (typeof number !== "number")
+            return number.$mul();
+          t2.setInnerHtml$1(output, t1 + C.JSNumber_methods.toStringAsFixed$1(number * 2.2046, 4) + " LB");
+        } else
+          t2.setInnerHtml$1(output, "\u8acb\u8f38\u5165\u6578\u5b57\u52a0\u4e0a LB \u6216 KG!");
+      }
       return;
     },
     $signature: 18
