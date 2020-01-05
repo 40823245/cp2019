@@ -58,7 +58,7 @@ void main() {
   
  
 
-  drawCuba(ctx);
+  drawROC(ctx);
   querySelector("#cuba").onClick.listen((e) => drawCuba(ctx));
   querySelector("#china").onClick.listen((e) => drawCHINA(ctx));
   querySelector("#button").onClick.listen((e) => clearCanvas());
@@ -66,6 +66,12 @@ void main() {
   querySelector("#usa").onClick.listen((e) => drawUSA(ctx));
   querySelector("#uk").onClick.listen((e) => drawUK(ctx));
   querySelector("#canada").onClick.listen((e) => drawCanada(ctx));
+  querySelector("#France").onClick.listen((e) => drawFrance(ctx));
+  querySelector("#Russia").onClick.listen((e) => drawRussia(ctx));
+  querySelector("#jp").onClick.listen((e) => drawJP(ctx));
+  querySelector("#deu").onClick.listen((e) => drawDEU(ctx));
+  querySelector("#nld").onClick.listen((e) => drawNLD(ctx));
+  querySelector("#roc").onClick.listen((e) => drawROC(ctx));
 }
   
   drawStar(cx, cy, spikes, outerRadius, innerRadius) {
@@ -185,6 +191,48 @@ void main() {
     ctx.fillStyle='yellow';
     ctx.fill();
 
+}
+
+void drawROC(ctx){
+  // 先畫滿地紅
+  ctx.clearRect(0, 0, flag_w, flag_h);
+  ctx.fillStyle = 'rgb(255, 0, 0)';
+  ctx.fillRect(0, 0, flag_w, flag_h);
+  // 再畫青天
+  ctx.fillStyle = 'rgb(0, 0, 150)';
+  ctx.fillRect(0, 0, flag_w / 2, flag_h / 2);
+  // 畫十二道光芒白日
+  ctx.beginPath();
+  num star_radius = flag_w / 8;
+  num angle = 0;
+  for (int i = 0; i < 25; i++) {
+    angle += 5 * Math.pi * 2 / 12;
+    num toX = circle_x + Math.cos(angle) * star_radius;
+    num toY = circle_y + Math.sin(angle) * star_radius;
+    // 只有 i 為 0 時移動到 toX, toY, 其餘都進行 lineTo
+    if (i != 0)
+      ctx.lineTo(toX, toY);
+    else
+      ctx.moveTo(toX, toY);
+  }
+  ctx.closePath();
+  // 將填色設為白色
+  ctx.fillStyle = '#fff';
+  ctx.fill();
+  // 白日:藍圈
+  ctx.beginPath();
+  ctx.arc(circle_x, circle_y, flag_w * 17 / 240, 0, Math.pi * 2, true);
+  ctx.closePath();
+  // 填色設為藍色
+  ctx.fillStyle = 'rgb(0, 0, 150)';
+  ctx.fill();
+  // 白日:白心
+  ctx.beginPath();
+  ctx.arc(circle_x, circle_y, flag_w / 16, 0, Math.pi * 2, true);
+  ctx.closePath();
+  // 填色設為白色
+  ctx.fillStyle = '#fff';
+  ctx.fill();
 }
 
 void drawCHINA(ctx){
@@ -406,6 +454,75 @@ void drawCanada(ctx){
   ctx.fillStyle = 'rgb(255, 0, 0)';
   ctx.fill();
   }
+
+void drawFrance(ctx){
+  ctx.clearRect(0, 0, flag_w, flag_h);
+  ctx.fillStyle = 'rgb(0, 0, 150)';
+  ctx.fillRect(0, 0, flag_w, flag_h);
+  ctx.closePath();
+  ctx.fillStyle = 'rgb(0, 0, 150)';
+  ctx.fill();
+  ctx.fillStyle = 'rgb(255, 255, 255)';
+  ctx.fillRect(100, 0, 200, 200);
+  ctx.fillStyle = 'rgb(255, 0, 0)';
+  ctx.fillRect(200, 0, 300, 200);
+}
+void drawRussia(ctx){
+  ctx.clearRect(0, 0, flag_w, flag_h);
+  ctx.fillStyle = '#fff';
+  ctx.fillRect(0, 0, flag_w, flag_h);
+  ctx.closePath();
+  ctx.fillStyle = '#fff';
+  ctx.fill();
+  ctx.fillStyle = 'rgb(0, 0, 140)';
+  ctx.fillRect(0, 66.6, 300,133.2 );
+  ctx.fillStyle = 'rgb(255, 0, 0)';
+  ctx.fillRect(0, 133.2, 300, 200);
+}
+
+  void drawJP(ctx){
+  // 先畫滿地白
+  ctx.clearRect(0, 0, flag_w, flag_h);
+  ctx.fillStyle = '#fff';
+  ctx.fillRect(0, 0, flag_w, flag_h);
+  ctx.closePath();
+  // 將填色設為白色
+  ctx.fillStyle = '#fff';
+  ctx.fill();
+  //紅心
+  ctx.beginPath();
+  ctx.arc(150,100, flag_w / 6, 0, Math.pi * 2, true);
+  ctx.closePath();
+  // 填色設為紅色
+  ctx.fillStyle = 'rgb(255, 0, 0)';
+  ctx.fill();
+}
+
+void drawDEU(ctx){
+  ctx.clearRect(0, 0, flag_w, flag_h);
+  // 紅色  
+  ctx.fillStyle = 'rgb(255,0,0)';
+  ctx.fillRect(0, 66.67, flag_w, flag_h/3);
+  //黃色
+  ctx.fillStyle = 'rgb(260,180,0)';
+  ctx.fillRect(0, 133.33, flag_w, flag_h/3);
+  //黑色
+  ctx.fillStyle = 'rgb(0,0,0)';
+  ctx.fillRect(0, 0, flag_w, flag_h/3);
+}
+
+void drawNLD(ctx){
+  ctx.clearRect(0, 0, flag_w, flag_h);
+  // 紅色  
+  ctx.fillStyle = 'rgb(255,0,0)';
+  ctx.fillRect(0, 0, flag_w, flag_h/3);
+  //白色
+  ctx.fillStyle = '#fff';
+  ctx.fillRect(0, 66.67, flag_w, flag_h/3);
+  //藍色
+  ctx.fillStyle = 'rgb(0,0,150)';
+  ctx.fillRect(0, 133.33, flag_w, flag_h/3);
+}
 
 void clearCanvas(){
   ctx.clearRect(0, 0, flag_w, flag_h);

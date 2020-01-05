@@ -2257,7 +2257,7 @@
       $.canvas = t2;
       t2 = H.interceptedTypeCheck((t2 && C.CanvasElement_methods).getContext$1(t2, "2d"), "$isCanvasRenderingContext2D");
       $.ctx = t2;
-      L.drawCuba(t2);
+      L.drawROC(t2);
       t2 = J.get$onClick$x(t1.querySelector("#cuba"));
       t3 = H.getTypeArgumentByIndex(t2, 0);
       W._EventStreamSubscription$(t2._target, t2._eventType, H.functionTypeCheck(new L.main_closure(), {func: 1, ret: -1, args: [t3]}), false, t3);
@@ -2276,9 +2276,27 @@
       t3 = J.get$onClick$x(t1.querySelector("#uk"));
       t2 = H.getTypeArgumentByIndex(t3, 0);
       W._EventStreamSubscription$(t3._target, t3._eventType, H.functionTypeCheck(new L.main_closure4(), {func: 1, ret: -1, args: [t2]}), false, t2);
-      t1 = J.get$onClick$x(t1.querySelector("#canada"));
+      t2 = J.get$onClick$x(t1.querySelector("#canada"));
+      t3 = H.getTypeArgumentByIndex(t2, 0);
+      W._EventStreamSubscription$(t2._target, t2._eventType, H.functionTypeCheck(new L.main_closure5(), {func: 1, ret: -1, args: [t3]}), false, t3);
+      t3 = J.get$onClick$x(t1.querySelector("#France"));
+      t2 = H.getTypeArgumentByIndex(t3, 0);
+      W._EventStreamSubscription$(t3._target, t3._eventType, H.functionTypeCheck(new L.main_closure6(), {func: 1, ret: -1, args: [t2]}), false, t2);
+      t2 = J.get$onClick$x(t1.querySelector("#Russia"));
+      t3 = H.getTypeArgumentByIndex(t2, 0);
+      W._EventStreamSubscription$(t2._target, t2._eventType, H.functionTypeCheck(new L.main_closure7(), {func: 1, ret: -1, args: [t3]}), false, t3);
+      t3 = J.get$onClick$x(t1.querySelector("#jp"));
+      t2 = H.getTypeArgumentByIndex(t3, 0);
+      W._EventStreamSubscription$(t3._target, t3._eventType, H.functionTypeCheck(new L.main_closure8(), {func: 1, ret: -1, args: [t2]}), false, t2);
+      t2 = J.get$onClick$x(t1.querySelector("#deu"));
+      t3 = H.getTypeArgumentByIndex(t2, 0);
+      W._EventStreamSubscription$(t2._target, t2._eventType, H.functionTypeCheck(new L.main_closure9(), {func: 1, ret: -1, args: [t3]}), false, t3);
+      t3 = J.get$onClick$x(t1.querySelector("#nld"));
+      t2 = H.getTypeArgumentByIndex(t3, 0);
+      W._EventStreamSubscription$(t3._target, t3._eventType, H.functionTypeCheck(new L.main_closure10(), {func: 1, ret: -1, args: [t2]}), false, t2);
+      t1 = J.get$onClick$x(t1.querySelector("#roc"));
       t2 = H.getTypeArgumentByIndex(t1, 0);
-      W._EventStreamSubscription$(t1._target, t1._eventType, H.functionTypeCheck(new L.main_closure5(), {func: 1, ret: -1, args: [t2]}), false, t2);
+      W._EventStreamSubscription$(t1._target, t1._eventType, H.functionTypeCheck(new L.main_closure11(), {func: 1, ret: -1, args: [t2]}), false, t2);
     },
     drawStar: function(cx, cy, spikes, outerRadius, innerRadius) {
       var rot, i, t2, t3,
@@ -2392,22 +2410,45 @@
       t1.fillStyle = "yellow";
       t1.fill();
     },
-    drawCuba: function(ctx) {
-      var _s14_ = "rgb(255, 0, 0)";
+    drawROC: function(ctx) {
+      var angle, i, t1, t2, toX, toY,
+        _s14_ = "rgb(0, 0, 150)";
       ctx.clearRect(0, 0, 300, 200);
-      ctx.fillStyle = "rgb(0, 0, 140)";
+      ctx.fillStyle = "rgb(255, 0, 0)";
       ctx.fillRect(0, 0, 300, 200);
-      ctx.fillStyle = "rgb(255, 255, 255)";
-      ctx.fillRect(0, 40, 300, 40);
-      ctx.fillRect(0, 120, 300, 40);
-      ctx.strokeStyle = _s14_;
-      ctx.stroke();
-      ctx.moveTo(0, 0);
-      ctx.lineTo(140, 100);
-      ctx.lineTo(0, 200);
+      ctx.fillStyle = _s14_;
+      ctx.fillRect(0, 0, 150, 100);
+      ctx.beginPath();
+      for (angle = 0, i = 0; i < 25; ++i) {
+        angle += 2.6179938779914944;
+        t1 = $.$get$circle_x();
+        t2 = Math.cos(angle);
+        if (typeof t1 !== "number")
+          return t1.$add();
+        toX = t1 + t2 * 37.5;
+        t2 = $.$get$circle_y();
+        t1 = Math.sin(angle);
+        if (typeof t2 !== "number")
+          return t2.$add();
+        toY = t2 + t1 * 37.5;
+        if (i !== 0)
+          ctx.lineTo(toX, toY);
+        else
+          ctx.moveTo(toX, toY);
+      }
+      ctx.closePath();
+      ctx.fillStyle = "#fff";
+      ctx.fill();
+      ctx.beginPath();
+      ctx.arc($.$get$circle_x(), $.$get$circle_y(), 21.25, 0, 6.283185307179586, true);
+      ctx.closePath();
       ctx.fillStyle = _s14_;
       ctx.fill();
-      L.drawStar(50, 100, 5, 20, 10);
+      ctx.beginPath();
+      ctx.arc($.$get$circle_x(), $.$get$circle_y(), 18.75, 0, 6.283185307179586, true);
+      ctx.closePath();
+      ctx.fillStyle = "#fff";
+      ctx.fill();
     },
     main_closure: function main_closure() {
     },
@@ -2422,6 +2463,18 @@
     main_closure4: function main_closure4() {
     },
     main_closure5: function main_closure5() {
+    },
+    main_closure6: function main_closure6() {
+    },
+    main_closure7: function main_closure7() {
+    },
+    main_closure8: function main_closure8() {
+    },
+    main_closure9: function main_closure9() {
+    },
+    main_closure10: function main_closure10() {
+    },
+    main_closure11: function main_closure11() {
     }
   };
   var holders = [C, H, J, P, W, L];
@@ -2701,13 +2754,13 @@
     call$0: function() {
       this.callback.call$0();
     },
-    $signature: 0
+    $signature: 1
   };
   P._AsyncRun__scheduleImmediateWithSetImmediate_internalCallback.prototype = {
     call$0: function() {
       this.callback.call$0();
     },
-    $signature: 0
+    $signature: 1
   };
   P._TimerImpl.prototype = {
     _TimerImpl$2: function(milliseconds, callback) {
@@ -2859,13 +2912,13 @@
     call$0: function() {
       P._Future__propagateToListeners(this.$this, this.listener);
     },
-    $signature: 0
+    $signature: 1
   };
   P._Future__prependListeners_closure.prototype = {
     call$0: function() {
       P._Future__propagateToListeners(this.$this, this._box_0.listeners);
     },
-    $signature: 0
+    $signature: 1
   };
   P._Future__chainForeignFuture_closure.prototype = {
     call$1: function(value) {
@@ -2889,7 +2942,7 @@
     call$0: function() {
       this.target._completeError$2(this.e, this.s);
     },
-    $signature: 0
+    $signature: 1
   };
   P._Future__propagateToListeners_handleWhenCompleteCallback.prototype = {
     call$0: function() {
@@ -3010,7 +3063,7 @@
     call$0: function() {
       this.future._complete$1(this._box_0.count);
     },
-    $signature: 0
+    $signature: 1
   };
   P.StreamSubscription.prototype = {};
   P.AsyncError.prototype = {
@@ -3033,7 +3086,7 @@
       error.stack = t2.toString$0(0);
       throw error;
     },
-    $signature: 0
+    $signature: 1
   };
   P._RootZone.prototype = {
     runGuarded$1: function(f) {
@@ -3333,10 +3386,27 @@
   };
   L.main_closure.prototype = {
     call$1: function(e) {
+      var t1,
+        _s14_ = "rgb(255, 0, 0)";
       H.interceptedTypeCheck(e, "$isMouseEvent");
-      return L.drawCuba($.ctx);
+      t1 = $.ctx;
+      t1.clearRect(0, 0, 300, 200);
+      t1.fillStyle = "rgb(0, 0, 140)";
+      t1.fillRect(0, 0, 300, 200);
+      t1.fillStyle = "rgb(255, 255, 255)";
+      t1.fillRect(0, 40, 300, 40);
+      t1.fillRect(0, 120, 300, 40);
+      t1.strokeStyle = _s14_;
+      t1.stroke();
+      t1.moveTo(0, 0);
+      t1.lineTo(140, 100);
+      t1.lineTo(0, 200);
+      t1.fillStyle = _s14_;
+      t1.fill();
+      L.drawStar(50, 100, 5, 20, 10);
+      return;
     },
-    $signature: 1
+    $signature: 0
   };
   L.main_closure0.prototype = {
     call$1: function(e) {
@@ -3353,7 +3423,7 @@
       L.drawStarYT1(120, 100, 5, 5, 2.5);
       return;
     },
-    $signature: 1
+    $signature: 0
   };
   L.main_closure1.prototype = {
     call$1: function(e) {
@@ -3361,7 +3431,7 @@
       $.ctx.clearRect(0, 0, 300, 200);
       return;
     },
-    $signature: 1
+    $signature: 0
   };
   L.main_closure2.prototype = {
     call$1: function(e) {
@@ -3402,7 +3472,7 @@
       L.fivePointStar(220, 55, 28, true, 180, "white");
       return;
     },
-    $signature: 1
+    $signature: 0
   };
   L.main_closure3.prototype = {
     call$1: function(e) {
@@ -3451,7 +3521,7 @@
       L.drawStar(136, 88, 5, 5, 2.5);
       return;
     },
-    $signature: 1
+    $signature: 0
   };
   L.main_closure4.prototype = {
     call$1: function(e) {
@@ -3512,7 +3582,7 @@
       t1.stroke();
       return;
     },
-    $signature: 1
+    $signature: 0
   };
   L.main_closure5.prototype = {
     call$1: function(e) {
@@ -3557,7 +3627,105 @@
       t1.fill();
       return;
     },
-    $signature: 1
+    $signature: 0
+  };
+  L.main_closure6.prototype = {
+    call$1: function(e) {
+      var t1,
+        _s14_ = "rgb(0, 0, 150)";
+      H.interceptedTypeCheck(e, "$isMouseEvent");
+      t1 = $.ctx;
+      t1.clearRect(0, 0, 300, 200);
+      t1.fillStyle = _s14_;
+      t1.fillRect(0, 0, 300, 200);
+      t1.closePath();
+      t1.fillStyle = _s14_;
+      t1.fill();
+      t1.fillStyle = "rgb(255, 255, 255)";
+      t1.fillRect(100, 0, 200, 200);
+      t1.fillStyle = "rgb(255, 0, 0)";
+      t1.fillRect(200, 0, 300, 200);
+      return;
+    },
+    $signature: 0
+  };
+  L.main_closure7.prototype = {
+    call$1: function(e) {
+      var t1;
+      H.interceptedTypeCheck(e, "$isMouseEvent");
+      t1 = $.ctx;
+      t1.clearRect(0, 0, 300, 200);
+      t1.fillStyle = "#fff";
+      t1.fillRect(0, 0, 300, 200);
+      t1.closePath();
+      t1.fillStyle = "#fff";
+      t1.fill();
+      t1.fillStyle = "rgb(0, 0, 140)";
+      t1.fillRect(0, 66.6, 300, 133.2);
+      t1.fillStyle = "rgb(255, 0, 0)";
+      t1.fillRect(0, 133.2, 300, 200);
+      return;
+    },
+    $signature: 0
+  };
+  L.main_closure8.prototype = {
+    call$1: function(e) {
+      var t1;
+      H.interceptedTypeCheck(e, "$isMouseEvent");
+      t1 = $.ctx;
+      t1.clearRect(0, 0, 300, 200);
+      t1.fillStyle = "#fff";
+      t1.fillRect(0, 0, 300, 200);
+      t1.closePath();
+      t1.fillStyle = "#fff";
+      t1.fill();
+      t1.beginPath();
+      t1.arc(150, 100, 50, 0, 6.283185307179586, true);
+      t1.closePath();
+      t1.fillStyle = "rgb(255, 0, 0)";
+      t1.fill();
+      return;
+    },
+    $signature: 0
+  };
+  L.main_closure9.prototype = {
+    call$1: function(e) {
+      var t1;
+      H.interceptedTypeCheck(e, "$isMouseEvent");
+      t1 = $.ctx;
+      t1.clearRect(0, 0, 300, 200);
+      t1.fillStyle = "rgb(255,0,0)";
+      t1.fillRect(0, 66.67, 300, 66.66666666666667);
+      t1.fillStyle = "rgb(260,180,0)";
+      t1.fillRect(0, 133.33, 300, 66.66666666666667);
+      t1.fillStyle = "rgb(0,0,0)";
+      t1.fillRect(0, 0, 300, 66.66666666666667);
+      return;
+    },
+    $signature: 0
+  };
+  L.main_closure10.prototype = {
+    call$1: function(e) {
+      var t1;
+      H.interceptedTypeCheck(e, "$isMouseEvent");
+      t1 = $.ctx;
+      t1.clearRect(0, 0, 300, 200);
+      t1.fillStyle = "rgb(255,0,0)";
+      t1.fillRect(0, 0, 300, 66.66666666666667);
+      t1.fillStyle = "#fff";
+      t1.fillRect(0, 66.67, 300, 66.66666666666667);
+      t1.fillStyle = "rgb(0,0,150)";
+      t1.fillRect(0, 133.33, 300, 66.66666666666667);
+      return;
+    },
+    $signature: 0
+  };
+  L.main_closure11.prototype = {
+    call$1: function(e) {
+      H.interceptedTypeCheck(e, "$isMouseEvent");
+      return L.drawROC($.ctx);
+    },
+    $signature: 0
   };
   (function aliases() {
     var _ = J.Interceptor.prototype;
@@ -3583,7 +3751,7 @@
     _inherit(J.JSUnmodifiableArray, J.JSArray);
     _inheritMany(J.JSNumber, [J.JSInt, J.JSDouble]);
     _inheritMany(P.Error, [H.NullError, H.JsNoSuchMethodError, H.UnknownJsTypeError, H.TypeErrorImplementation, H.RuntimeError, P.AssertionError, P.NullThrownError, P.ArgumentError, P.UnsupportedError, P.UnimplementedError, P.ConcurrentModificationError, P.CyclicInitializationError]);
-    _inheritMany(H.Closure, [H.unwrapException_saveStackTrace, H.TearOffClosure, H.initHooks_closure, H.initHooks_closure0, H.initHooks_closure1, P._AsyncRun__initializeScheduleImmediate_internalCallback, P._AsyncRun__initializeScheduleImmediate_closure, P._AsyncRun__scheduleImmediateJsOverride_internalCallback, P._AsyncRun__scheduleImmediateWithSetImmediate_internalCallback, P._TimerImpl_internalCallback, P._Future__addListener_closure, P._Future__prependListeners_closure, P._Future__chainForeignFuture_closure, P._Future__chainForeignFuture_closure0, P._Future__chainForeignFuture_closure1, P._Future__propagateToListeners_handleWhenCompleteCallback, P._Future__propagateToListeners_handleWhenCompleteCallback_closure, P._Future__propagateToListeners_handleValueCallback, P._Future__propagateToListeners_handleError, P.Stream_length_closure, P.Stream_length_closure0, P._rootHandleUncaughtError_closure, P._RootZone_bindCallback_closure, P._RootZone_bindCallbackGuarded_closure, P._RootZone_bindUnaryCallbackGuarded_closure, W._EventStreamSubscription_closure, L.main_closure, L.main_closure0, L.main_closure1, L.main_closure2, L.main_closure3, L.main_closure4, L.main_closure5]);
+    _inheritMany(H.Closure, [H.unwrapException_saveStackTrace, H.TearOffClosure, H.initHooks_closure, H.initHooks_closure0, H.initHooks_closure1, P._AsyncRun__initializeScheduleImmediate_internalCallback, P._AsyncRun__initializeScheduleImmediate_closure, P._AsyncRun__scheduleImmediateJsOverride_internalCallback, P._AsyncRun__scheduleImmediateWithSetImmediate_internalCallback, P._TimerImpl_internalCallback, P._Future__addListener_closure, P._Future__prependListeners_closure, P._Future__chainForeignFuture_closure, P._Future__chainForeignFuture_closure0, P._Future__chainForeignFuture_closure1, P._Future__propagateToListeners_handleWhenCompleteCallback, P._Future__propagateToListeners_handleWhenCompleteCallback_closure, P._Future__propagateToListeners_handleValueCallback, P._Future__propagateToListeners_handleError, P.Stream_length_closure, P.Stream_length_closure0, P._rootHandleUncaughtError_closure, P._RootZone_bindCallback_closure, P._RootZone_bindCallbackGuarded_closure, P._RootZone_bindUnaryCallbackGuarded_closure, W._EventStreamSubscription_closure, L.main_closure, L.main_closure0, L.main_closure1, L.main_closure2, L.main_closure3, L.main_closure4, L.main_closure5, L.main_closure6, L.main_closure7, L.main_closure8, L.main_closure9, L.main_closure10, L.main_closure11]);
     _inheritMany(H.TearOffClosure, [H.StaticClosure, H.BoundClosure]);
     _inherit(H._AssertionError, P.AssertionError);
     _inherit(P._RootZone, P._Zone);
@@ -3730,7 +3898,7 @@
 ;
     C.C__RootZone = new P._RootZone();
   })();
-  var init = {mangledGlobalNames: {int: "int", double: "double", num: "num", String: "String", bool: "bool", Null: "Null", List: "List"}, mangledNames: {}, getTypeFromName: getGlobalFromName, metadata: [], types: [{func: 1, ret: P.Null}, {func: 1, ret: -1, args: [W.MouseEvent]}, {func: 1, ret: -1}, {func: 1, ret: -1, args: [{func: 1, ret: -1}]}, {func: 1, args: [,]}, {func: 1, ret: P.Null, args: [,]}, {func: 1, args: [, P.String]}, {func: 1, args: [P.String]}, {func: 1, ret: P.Null, args: [{func: 1, ret: -1}]}, {func: 1, ret: P.Null, args: [,], opt: [P.StackTrace]}, {func: 1, ret: [P._Future,,], args: [,]}, {func: 1, args: [W.Event]}], interceptorsByTag: null, leafTags: null};
+  var init = {mangledGlobalNames: {int: "int", double: "double", num: "num", String: "String", bool: "bool", Null: "Null", List: "List"}, mangledNames: {}, getTypeFromName: getGlobalFromName, metadata: [], types: [{func: 1, ret: -1, args: [W.MouseEvent]}, {func: 1, ret: P.Null}, {func: 1, ret: -1}, {func: 1, ret: -1, args: [{func: 1, ret: -1}]}, {func: 1, args: [,]}, {func: 1, ret: P.Null, args: [,]}, {func: 1, args: [, P.String]}, {func: 1, args: [P.String]}, {func: 1, ret: P.Null, args: [{func: 1, ret: -1}]}, {func: 1, ret: P.Null, args: [,], opt: [P.StackTrace]}, {func: 1, ret: [P._Future,,], args: [,]}, {func: 1, args: [W.Event]}], interceptorsByTag: null, leafTags: null};
   (function staticFields() {
     $.Closure_functionCounter = 0;
     $.BoundClosure_selfFieldNameCache = null;
@@ -3825,6 +3993,12 @@
     });
     _lazy($, "_AsyncRun__scheduleImmediateClosure", "$get$_AsyncRun__scheduleImmediateClosure", function() {
       return P._AsyncRun__initializeScheduleImmediate();
+    });
+    _lazy($, "circle_x", "$get$circle_x", function() {
+      return 75;
+    });
+    _lazy($, "circle_y", "$get$circle_y", function() {
+      return 50;
     });
   })();
   (function nativeSupport() {
