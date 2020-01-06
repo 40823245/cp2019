@@ -24,19 +24,19 @@
 <v t="leo.20180902120523.11"><vh>快捷鍵</vh>
 <v t="leo.20180902120523.12"><vh>計算機程式課程目錄</vh>
 <v t="leo.20180902120523.13"><vh>各式內容引用範例</vh>
-<v t="leo.20200106233416.1"><vh>溫度轉換</vh>
-<v t="leo.20200106233426.1"><vh>溫度轉換</vh></v>
-</v>
-<v t="leo.20180902120523.16"><vh>重量轉換</vh>
+<v t="leo.20180902120523.16"><vh>@edit重量轉換</vh>
 <v t="leo.20180902120523.17"><vh>重量轉換</vh></v>
 </v>
-<v t="leo.20180902120523.18"><vh>亂數分組</vh>
+<v t="leo.20200106234115.1"><vh>@edit溫度轉換</vh>
+<v t="leo.20200106234123.1"><vh>溫度轉換</vh></v>
+</v>
+<v t="leo.20180902120523.18"><vh>@edit亂數分組</vh>
 <v t="leo.20180902120523.19"><vh>亂數分組</vh></v>
 </v>
-<v t="leo.20200106225629.1"><vh>各國國旗</vh>
+<v t="leo.20200106225629.1"><vh>@edit各國國旗</vh>
 <v t="leo.20200106225644.1"><vh>各國國旗</vh></v>
 </v>
-<v t="leo.20200106230007.1"><vh>心得</vh>
+<v t="leo.20200106230007.1"><vh>@edit心得</vh>
 <v t="leo.20200106230011.1"><vh>心得</vh></v>
 </v>
 </v>
@@ -75,11 +75,11 @@ Created by [KMOLab](http://lab.kmol.info/)
 </t>
 <t tx="leo.20180902120523.12"># 計算機程式課程目錄
 
-* [溫度轉換](https://40823245.github.io/cp2019/reveal/index.html#/2)
 * [重量轉換](https://40823245.github.io/cp2019/reveal/index.html#/2)
-* [亂數分組](https://40823245.github.io/cp2019/reveal/index.html#/3)
-* [各國國旗](https://40823245.github.io/cp2019/reveal/index.html#/4)
-* [心得](https://40823245.github.io/cp2019/reveal/index.html#/5)</t>
+* [溫度轉換](https://40823245.github.io/cp2019/reveal/index.html#/3)
+* [亂數分組](https://40823245.github.io/cp2019/reveal/index.html#/4)
+* [各國國旗](https://40823245.github.io/cp2019/reveal/index.html#/5)
+* [心得](https://40823245.github.io/cp2019/reveal/index.html#/6)</t>
 <t tx="leo.20180902120523.13">&lt;section&gt;
 @others
 &lt;/section&gt;
@@ -304,16 +304,18 @@ vertical: body pane on the botton</t>
 </t>
 <t tx="leo.20200106230011.1">## 心得
 學習到了網頁編輯的方法，也學會使用程式來畫圖、計算等等，也學會如何拍影片、上字幕，讓我對電腦程式更加了解。</t>
-<t tx="leo.20200106233416.1">&lt;section data-markdown&gt;
+<t tx="leo.20200106234115.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
 @others
     &lt;/script&gt;
 &lt;/section&gt;
 
 
+
 						
 </t>
-<t tx="leo.20200106233426.1">## 溫度轉換
+<t tx="leo.20200106234123.1">## 溫度轉換
 &lt;iframe src="https://dartpad.github.io" width="800" height="550"&gt;&lt;/iframe&gt;
 &lt;script="https://dartpad.github.io/?id=e3fab4a87bd2c3f3fbb114e6d92ce001"&gt;</t>
 </tnodes>
