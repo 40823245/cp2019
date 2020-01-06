@@ -76,7 +76,13 @@ Created by [KMOLab](http://lab.kmol.info/)
 * [溫度轉換](https://40823245.github.io/cp2019/reveal/index.html#/3)
 * [亂數分組](https://40823245.github.io/cp2019/reveal/index.html#/4)
 * [各國國旗](https://40823245.github.io/cp2019/reveal/index.html#/5)
-* [心得](https://40823245.github.io/cp2019/reveal/index.html#/6)</t>
+* [心得](https://40823245.github.io/cp2019/reveal/index.html#/6)
+
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+			</t>
 <t tx="leo.20180902120523.16">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
