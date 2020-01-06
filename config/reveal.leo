@@ -331,6 +331,6 @@ vertical: body pane on the botton</t>
 </t>
 <t tx="leo.20200107012424.1">&lt;p&gt;各國國旗&lt;/p&gt;
 &lt;p&gt;&lt;canvas height="200" id="canvas" width="300"&gt;&lt;/canvas&gt; &lt;button id="button"&gt;Clear Canvas&lt;/button&gt; &lt;button id="roc"&gt;Draw ROC&lt;/button&gt; &lt;button id="cuba"&gt;Draw Cuba&lt;/button&gt; &lt;button id="china"&gt;Draw CHINA&lt;/button&gt; &lt;button id="San"&gt;Draw SAN&lt;/button&gt; &lt;button id="usa"&gt;Draw USA&lt;/button&gt; &lt;button id="uk"&gt;Draw UK&lt;/button&gt; &lt;button id="canada"&gt;Draw Canada&lt;/button&gt; &lt;button id="France"&gt;Draw France&lt;/button&gt; &lt;button id="Russia"&gt;Draw Russia&lt;/button&gt; &lt;button id="jp"&gt;Draw JP&lt;/button&gt; &lt;button id="deu"&gt;Draw DEU&lt;/button&gt; &lt;button id="nld"&gt;Draw NLD&lt;/button&gt;&lt;/p&gt;
-&lt;script src="/downloads/dart_ex/flag/flag.js"&gt;&lt;/script&gt;</t>
+&lt;script src="https://40823245.github.io/cp2019/downloads/dart_ex/flag/flag.js"&gt;&lt;/script&gt;</t>
 </tnodes>
 </leo_file>
