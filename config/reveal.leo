@@ -23,17 +23,19 @@
 </v>
 <v t="leo.20180902120523.11"><vh>快捷鍵</vh>
 <v t="leo.20180902120523.12"><vh>計算機程式課程目錄</vh></v>
+<v t="leo.20200107005645.1"><vh>各式內容引用範例</vh>
 <v t="leo.20180902120523.16"><vh>@edit重量轉換</vh>
 <v t="leo.20180902120523.17"><vh>重量轉換</vh></v>
+</v>
 <v t="leo.20200106234115.1"><vh>@edit溫度轉換</vh>
 <v t="leo.20200106234123.1"><vh>溫度轉換</vh></v>
-</v>
 </v>
 <v t="leo.20180902120523.18"><vh>@edit亂數分組</vh>
 <v t="leo.20180902120523.19"><vh>亂數分組</vh></v>
 </v>
 <v t="leo.20200106225629.1"><vh>@edit各國國旗</vh>
 <v t="leo.20200106225644.1"><vh>各國國旗</vh></v>
+</v>
 </v>
 <v t="leo.20200106230007.1"><vh>@edit心得</vh>
 <v t="leo.20200106230011.1"><vh>心得</vh></v>
@@ -309,5 +311,10 @@ vertical: body pane on the botton</t>
 </t>
 <t tx="leo.20200106234123.1"># 溫度轉換
 &lt;iframe width="800" height="550" src="https://dartpad.github.io/?id=e3fab4a87bd2c3f3fbb114e6d92ce001" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
+<t tx="leo.20200107005645.1">&lt;section&gt;
+@others
+&lt;/section&gt;
+
+</t>
 </tnodes>
 </leo_file>
