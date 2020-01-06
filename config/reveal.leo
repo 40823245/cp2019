@@ -92,13 +92,13 @@ Created by [KMOLab](http://lab.kmol.info/)
     &lt;/script&gt;
 &lt;/section&gt;
 
-
+## 重量轉換
+&lt;iframe width="800" height="550" src="https://dartpad.github.io/?id=0fb46c86ac1cf47a98556c82ff6b7d07" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 
 						
 </t>
 <t tx="leo.20180902120523.17">## 重量轉換
-&lt;iframe src="https://dartpad.github.io" width="800" height="550"&gt;&lt;/iframe&gt;
-&lt;script="https://dartpad.github.io/?id=0fb46c86ac1cf47a98556c82ff6b7d07"&gt;</t>
+&lt;iframe width="800" height="550" src="https://dartpad.github.io/?id=0fb46c86ac1cf47a98556c82ff6b7d07" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
 <t tx="leo.20180902120523.18">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
@@ -311,7 +311,9 @@ vertical: body pane on the botton</t>
     &lt;/script&gt;
 &lt;/section&gt;
 
-
+## 溫度轉換
+&lt;iframe src="https://dartpad.github.io" width="800" height="550"&gt;&lt;/iframe&gt;
+&lt;script="https://dartpad.github.io/?id=e3fab4a87bd2c3f3fbb114e6d92ce001"&gt;
 
 						
 </t>
