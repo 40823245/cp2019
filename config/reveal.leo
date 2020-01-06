@@ -37,9 +37,6 @@
 <v t="leo.20200106225644.1"><vh>各國國旗</vh></v>
 </v>
 </v>
-<v t="leo.20200107012237.1"><vh>JavaScript</vh>
-<v t="leo.20200107012424.1"><vh>JavaScript</vh></v>
-</v>
 <v t="leo.20200106230007.1"><vh>心得</vh>
 <v t="leo.20200106230011.1"><vh>心得</vh></v>
 </v>
@@ -78,11 +75,10 @@ Created by [KMOLab](http://lab.kmol.info/)
 <t tx="leo.20180902120523.12">## 計算機程式課程目錄
 
 * [重量轉換](https://40823245.github.io/cp2019/reveal/index.html#/2)
-* [溫度轉換](https://40823245.github.io/cp2019/reveal/index.html#/3)
-* [亂數分組](https://40823245.github.io/cp2019/reveal/index.html#/4)
-* [各國國旗](https://40823245.github.io/cp2019/reveal/index.html#/5)
-* [JavaScript](https://40823245.github.io/cp2019/reveal/index.html#/6)
-* [心得](https://40823245.github.io/cp2019/reveal/index.html#/7)
+* [溫度轉換](https://40823245.github.io/cp2019/reveal/index.html#/2/1)
+* [亂數分組](https://40823245.github.io/cp2019/reveal/index.html#/2/2)
+* [各國國旗](https://40823245.github.io/cp2019/reveal/index.html#/2/3)
+* [心得](https://40823245.github.io/cp2019/reveal/index.html#/3)
 
     &lt;/script&gt;
 &lt;/section&gt;
@@ -320,17 +316,5 @@ vertical: body pane on the botton</t>
 &lt;/section&gt;
 
 </t>
-<t tx="leo.20200107012237.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="leo.20200107012424.1">&lt;p&gt;各國國旗&lt;/p&gt;
-&lt;p&gt;&lt;canvas height="200" id="canvas" width="300"&gt;&lt;/canvas&gt; &lt;button id="button"&gt;Clear Canvas&lt;/button&gt; &lt;button id="roc"&gt;Draw ROC&lt;/button&gt; &lt;button id="cuba"&gt;Draw Cuba&lt;/button&gt; &lt;button id="china"&gt;Draw CHINA&lt;/button&gt; &lt;button id="San"&gt;Draw SAN&lt;/button&gt; &lt;button id="usa"&gt;Draw USA&lt;/button&gt; &lt;button id="uk"&gt;Draw UK&lt;/button&gt; &lt;button id="canada"&gt;Draw Canada&lt;/button&gt; &lt;button id="France"&gt;Draw France&lt;/button&gt; &lt;button id="Russia"&gt;Draw Russia&lt;/button&gt; &lt;button id="jp"&gt;Draw JP&lt;/button&gt; &lt;button id="deu"&gt;Draw DEU&lt;/button&gt; &lt;button id="nld"&gt;Draw NLD&lt;/button&gt;&lt;/p&gt;
-&lt;script src="https://40823245.github.io/cp2019/downloads/dart_ex/flag/flag.js"&gt;&lt;/script&gt;</t>
 </tnodes>
 </leo_file>
