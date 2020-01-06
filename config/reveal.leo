@@ -22,8 +22,7 @@
 <v t="leo.20180902120523.10"><vh>封面投影片內容</vh></v>
 </v>
 <v t="leo.20180902120523.11"><vh>快捷鍵</vh>
-<v t="leo.20180902120523.12"><vh>計算機程式課程目錄</vh>
-<v t="leo.20180902120523.13"><vh>各式內容引用範例</vh>
+<v t="leo.20180902120523.12"><vh>計算機程式課程目錄</vh></v>
 <v t="leo.20180902120523.16"><vh>@edit重量轉換</vh>
 <v t="leo.20180902120523.17"><vh>重量轉換</vh></v>
 </v>
@@ -38,8 +37,6 @@
 </v>
 <v t="leo.20200106230007.1"><vh>@edit心得</vh>
 <v t="leo.20200106230011.1"><vh>心得</vh></v>
-</v>
-</v>
 </v>
 </v>
 </v>
@@ -73,30 +70,23 @@ Created by [KMOLab](http://lab.kmol.info/)
 
 						
 </t>
-<t tx="leo.20180902120523.12"># 計算機程式課程目錄
+<t tx="leo.20180902120523.12">## 計算機程式課程目錄
 
 * [重量轉換](https://40823245.github.io/cp2019/reveal/index.html#/2)
 * [溫度轉換](https://40823245.github.io/cp2019/reveal/index.html#/3)
 * [亂數分組](https://40823245.github.io/cp2019/reveal/index.html#/4)
 * [各國國旗](https://40823245.github.io/cp2019/reveal/index.html#/5)
 * [心得](https://40823245.github.io/cp2019/reveal/index.html#/6)</t>
-<t tx="leo.20180902120523.13">&lt;section&gt;
-@others
-&lt;/section&gt;
-
-</t>
 <t tx="leo.20180902120523.16">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
-&lt;!-- 請注意, @others 不可以內縮 --&gt;
 @others
     &lt;/script&gt;
 &lt;/section&gt;
 
 
 
-						
-</t>
-<t tx="leo.20180902120523.17">## 重量轉換
+						</t>
+<t tx="leo.20180902120523.17"># 重量轉換
 &lt;iframe width="800" height="550" src="https://dartpad.github.io/?id=0fb46c86ac1cf47a98556c82ff6b7d07" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
 <t tx="leo.20180902120523.18">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
@@ -107,9 +97,8 @@ Created by [KMOLab](http://lab.kmol.info/)
 
 						
 </t>
-<t tx="leo.20180902120523.19">## 亂數分組
-&lt;iframe src="https://dartpad.github.io" width="800" height="550"&gt;&lt;/iframe&gt;
-&lt;script="https://dartpad.github.io/?id=410c59117a9f09d12b641f1c68d2fdb7"&gt;</t>
+<t tx="leo.20180902120523.19"># 亂數分組
+&lt;iframe width="800" height="550" src="https://dartpad.github.io/?id=410c59117a9f09d12b641f1c68d2fdb7" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
 <t tx="leo.20180902120523.2"></t>
 <t tx="leo.20180902120523.3">@language xml
 @tabwidth -4
@@ -289,9 +278,8 @@ vertical: body pane on the botton</t>
 
 						
 </t>
-<t tx="leo.20200106225644.1">## 各國國旗
-&lt;iframe src="https://dartpad.github.io" width="800" height="550"&gt;&lt;/iframe&gt;
-&lt;script="https://dartpad.github.io/?id=682bd3ebc6abe0ce00b4f854faa64bab"&gt;</t>
+<t tx="leo.20200106225644.1"># 各國國旗
+&lt;iframe width="800" height="550" src="https://dartpad.github.io/?id=682bd3ebc6abe0ce00b4f854faa64bab" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
 <t tx="leo.20200106230007.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
@@ -301,7 +289,7 @@ vertical: body pane on the botton</t>
 
 						
 </t>
-<t tx="leo.20200106230011.1">## 心得
+<t tx="leo.20200106230011.1"># 心得
 學習到了網頁編輯的方法，也學會使用程式來畫圖、計算等等，也學會如何拍影片、上字幕，讓我對電腦程式更加了解。</t>
 <t tx="leo.20200106234115.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
@@ -313,8 +301,7 @@ vertical: body pane on the botton</t>
 
 						
 </t>
-<t tx="leo.20200106234123.1">## 溫度轉換
-&lt;iframe src="https://dartpad.github.io" width="800" height="550"&gt;&lt;/iframe&gt;
-&lt;script="https://dartpad.github.io/?id=e3fab4a87bd2c3f3fbb114e6d92ce001"&gt;</t>
+<t tx="leo.20200106234123.1"># 溫度轉換
+&lt;iframe width="800" height="550" src="https://dartpad.github.io/?id=e3fab4a87bd2c3f3fbb114e6d92ce001" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
 </tnodes>
 </leo_file>
