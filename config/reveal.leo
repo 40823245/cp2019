@@ -76,9 +76,9 @@ Created by [KMOLab](http://lab.kmol.info/)
 <t tx="leo.20180902120523.12"># 計算機程式課程目錄
 
 * [溫度轉換](https://40823245.github.io/cp2019/reveal/index.html#/2)
-* 重量轉換
-* 亂數分組
-* 各國國旗</t>
+* [重量轉換](https://40823245.github.io/cp2019/reveal/index.html#/3)
+* [亂數分組](https://40823245.github.io/cp2019/reveal/index.html#/4)
+* [各國國旗](https://40823245.github.io/cp2019/reveal/index.html#/5)</t>
 <t tx="leo.20180902120523.13">&lt;section&gt;
 @others
 &lt;/section&gt;
