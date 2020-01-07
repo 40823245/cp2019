@@ -95,7 +95,7 @@ Created by [KMOLab](http://lab.kmol.info/)
 
 						</t>
 <t tx="leo.20180902120523.17"># 重量轉換
-&lt;iframe width="800" height="550" src="https://dartpad.github.io/?id=0fb46c86ac1cf47a98556c82ff6b7d07" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
+&lt;iframe width="800" height="550" src="https://dartpad.github.io/embed-html.html?gh_owner=40823245&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/weight_change&amp;theme=dark" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
 <t tx="leo.20180902120523.18">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
@@ -106,7 +106,7 @@ Created by [KMOLab](http://lab.kmol.info/)
 						
 </t>
 <t tx="leo.20180902120523.19"># 亂數分組
-&lt;iframe width="800" height="550" src="https://dartpad.github.io/?id=410c59117a9f09d12b641f1c68d2fdb7" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
+&lt;iframe width="800" height="550" src="https://dartpad.github.io/embed-html.html?gh_owner=40823245&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/random_grouping&amp;theme=dark" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
 <t tx="leo.20180902120523.2"></t>
 <t tx="leo.20180902120523.3">@language xml
 @tabwidth -4
@@ -287,7 +287,7 @@ vertical: body pane on the botton</t>
 						
 </t>
 <t tx="leo.20200106225644.1"># 各國國旗
-&lt;iframe width="800" height="550" src="https://dartpad.github.io/?id=682bd3ebc6abe0ce00b4f854faa64bab" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
+&lt;iframe width="800" height="550" src="https://dartpad.github.io/embed-html.html?gh_owner=40823245&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/flag&amp;theme=dark" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
 <t tx="leo.20200106230007.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
@@ -310,7 +310,7 @@ vertical: body pane on the botton</t>
 						
 </t>
 <t tx="leo.20200106234123.1"># 溫度轉換
-&lt;iframe width="800" height="550" src="https://dartpad.github.io/?id=e3fab4a87bd2c3f3fbb114e6d92ce001" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
+&lt;iframe width="800" height="550" src="https://dartpad.github.io/embed-html.html?gh_owner=40823245&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/CF&amp;theme=dark" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
 <t tx="leo.20200107005645.1">&lt;section&gt;
 @others
 &lt;/section&gt;
